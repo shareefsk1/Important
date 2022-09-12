@@ -1,0 +1,14 @@
+string = input()
+sub_string = input()
+length = len(string)
+
+sub_string_index = 0
+for char_string in string :
+    if sub_string[sub_string_index] == char_string :
+        sub_string_index += 1
+        if sub_string_index == len(sub_string) :
+            break
+if sub_string_index == len(sub_string) :
+    print("Yes")
+else:
+    print("No")
